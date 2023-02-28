@@ -1,0 +1,377 @@
+[2023-01-30 09:06:16:642][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - Starting TodoListJpaApplication using Java 17.0.3 on LAPTOP-RGH1PBBR with PID 25656 (C:\SpringWorkspace\MybatisTodoList\todoListJPA\target\classes started by 강예진 in C:\SpringWorkspace\MybatisTodoList\todoListJPA)
+[2023-01-30 09:06:16:648][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-01-30 09:06:16:695][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-30 09:06:16:695][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-30 09:06:16:1248][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-01-30 09:06:16:1307][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+[2023-01-30 09:06:16:1419][restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.jpa]' package. Please check your configuration.
+[2023-01-30 09:06:17:1833][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+[2023-01-30 09:06:17:1842][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:17:1843][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-30 09:06:17:1843][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2023-01-30 09:06:17:1928][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-30 09:06:17:1929][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1233 ms
+[2023-01-30 09:06:17:2094][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-30 09:06:17:2417][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-30 09:06:17:2463][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-01-30 09:06:17:2531][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+[2023-01-30 09:06:18:2729][restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-01-30 09:06:18:2879][restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2023-01-30 09:06:18:3376][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-01-30 09:06:18:3385][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-01-30 09:06:19:3690][restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-01-30 09:06:19:3825][restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[2023-01-30 09:06:19:4022][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2023-01-30 09:06:19:4035][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:19:4055][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+[2023-01-30 09:06:19:4063][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - Started TodoListJpaApplication in 3.856 seconds (JVM running for 4.614)
+[2023-01-30 09:06:24:9606][http-nio-9001-exec-1] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030x02v0x8500x020xe1/%0xd10x0dw0x830x130x9040xa40x180xfen0xef0xe90xa90x8b"0xe10x11)0xd1<l0x02Q ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-01-30 09:06:24:9606][http-nio-9001-exec-2] INFO  o.a.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x0360xec0xa10x8b$0x9600xbc0xb2g0x0c_E0xa30xc5^0x030x92S0xdf0xf20x140xb50x0aU0xc30xbc0xb90xea0x170xed0x8c ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-01-30 09:06:32:16885][RMI TCP Connection(7)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2023-01-30 09:06:32:16908][RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:32:16908][RMI TCP Connection(7)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-30 09:06:32:16912][RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:32:16915][RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:32:16916][RMI TCP Connection(7)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-01-30 09:06:32:16919][RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-30 09:06:32:16942][RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2023-01-30 09:06:35:535][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - Starting TodoListJpaApplication using Java 17.0.3 on LAPTOP-RGH1PBBR with PID 25032 (C:\SpringWorkspace\MybatisTodoList\todoListJPA\target\classes started by 강예진 in C:\SpringWorkspace\MybatisTodoList\todoListJPA)
+[2023-01-30 09:06:35:536][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - No active profile set, falling back to 1 default profile: "default"
+[2023-01-30 09:06:35:574][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-01-30 09:06:35:574][restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-01-30 09:06:35:1047][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-01-30 09:06:35:1089][restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+[2023-01-30 09:06:35:1174][restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.study.jpa]' package. Please check your configuration.
+[2023-01-30 09:06:36:1593][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http)
+[2023-01-30 09:06:36:1604][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:36:1604][restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2023-01-30 09:06:36:1605][restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2023-01-30 09:06:36:1707][restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2023-01-30 09:06:36:1708][restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1134 ms
+[2023-01-30 09:06:36:1873][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2023-01-30 09:06:36:2171][restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2023-01-30 09:06:36:2221][restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-01-30 09:06:36:2274][restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.11.Final
+[2023-01-30 09:06:36:2452][restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-01-30 09:06:37:2594][restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2023-01-30 09:06:37:3117][restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-01-30 09:06:37:3128][restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-01-30 09:06:37:3453][restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2023-01-30 09:06:38:3570][restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+[2023-01-30 09:06:38:3774][restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[2023-01-30 09:06:38:3787][restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9001"]
+[2023-01-30 09:06:38:3810][restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path ''
+[2023-01-30 09:06:38:3820][restartedMain] INFO  c.study.jpa.TodoListJpaApplication - Started TodoListJpaApplication in 3.651 seconds (JVM running for 4.414)
+[2023-01-30 09:06:59:24857][http-nio-9001-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-01-30 09:06:59:24858][http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2023-01-30 09:06:59:24859][http-nio-9001-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2023-01-30 09:06:59:25317][http-nio-9001-exec-6] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:14:280503][http-nio-9001-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3] with root cause
+javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1672)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy4/jdk.proxy4.$Proxy105.findByKey(Unknown Source)
+	at com.study.jpa.service.TodoListServiceImpl.delete(TodoListServiceImpl.java:93)
+	at com.study.jpa.controller.TodoListController.delete(TodoListController.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-01-30 09:11:46:312218][http-nio-9001-exec-9] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:48:313762][http-nio-9001-exec-4] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:49:314561][http-nio-9001-exec-5] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:49:314687][http-nio-9001-exec-7] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:49:314865][http-nio-9001-exec-6] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:49:315040][http-nio-9001-exec-10] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:49:315496][http-nio-9001-exec-9] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:50:315848][http-nio-9001-exec-1] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446), TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2), TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba), TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:54:319863][http-nio-9001-exec-5] INFO  TodoListServiceImpl - =======save - todoitem=======Optional[TodoList(id=129, todo=2222, finish=false, key=4972ff38a63164519732e963240b4bba)]
+[2023-01-30 09:11:54:319911][http-nio-9001-exec-5] INFO  TodoListServiceImpl - =======save - todoitem=======Optional[TodoList(id=126, todo=안녕하세요, finish=false, key=417766159e463dcaac5892eaedbd6aa2)]
+[2023-01-30 09:11:54:319925][http-nio-9001-exec-5] INFO  TodoListServiceImpl - =======save - todoitem=======Optional[TodoList(id=127, todo=1111, finish=false, key=44d938e028f61947b99be3b504672446)]
+[2023-01-30 09:11:55:321372][http-nio-9001-exec-10] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:11:57:322648][http-nio-9001-exec-8] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:12:02:327906][http-nio-9001-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3] with root cause
+javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1672)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy4/jdk.proxy4.$Proxy105.findByKey(Unknown Source)
+	at com.study.jpa.service.TodoListServiceImpl.delete(TodoListServiceImpl.java:93)
+	at com.study.jpa.controller.TodoListController.delete(TodoListController.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-01-30 09:12:05:330657][http-nio-9001-exec-5] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:12:12:337807][http-nio-9001-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3] with root cause
+javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1672)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy4/jdk.proxy4.$Proxy105.findByKey(Unknown Source)
+	at com.study.jpa.service.TodoListServiceImpl.delete(TodoListServiceImpl.java:93)
+	at com.study.jpa.controller.TodoListController.delete(TodoListController.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[2023-01-30 09:12:16:342016][http-nio-9001-exec-1] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:12:18:343551][http-nio-9001-exec-3] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=124, todo=9999, finish=true, key=42f3b0022c032f689fa541647a27ace6), TodoList(id=130, todo=tododatadata1234, finish=true, key=todokey), TodoList(id=133, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=134, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=135, todo=tododatadata1234, finish=false, key=todotodotodo), TodoList(id=136, todo=working, finish=false, key=abcd1234)]
+[2023-01-30 09:12:21:346887][http-nio-9001-exec-6] INFO  TodoListServiceImpl - =======findAll - todolist=======[]
+[2023-01-30 09:12:25:350546][http-nio-9001-exec-8] INFO  TodoListServiceImpl - =======findAll - todolist=======[]
+[2023-01-30 09:12:25:351495][http-nio-9001-exec-9] INFO  TodoListServiceImpl - =======findAll - todolist=======[]
+[2023-01-30 09:12:37:362834][http-nio-9001-exec-4] INFO  TodoListServiceImpl - =======save - 받아온 todo 인자=======TodoList(id=null, todo=조깅하기, finish=false, key=42d7012f763428e2a4504b4e0925b8d2)
+[2023-01-30 09:12:37:362860][http-nio-9001-exec-4] INFO  TodoListServiceImpl - =======save - todoitem=======TodoList(id=138, todo=조깅하기, finish=false, key=42d7012f763428e2a4504b4e0925b8d2)
+[2023-01-30 09:12:41:366923][http-nio-9001-exec-6] INFO  TodoListServiceImpl - =======findAll - todolist=======[TodoList(id=138, todo=조깅하기, finish=false, key=42d7012f763428e2a4504b4e0925b8d2)]
+[2023-01-30 09:15:55:561247][http-nio-9001-exec-1] INFO  TodoListServiceImpl - =======save - 받아온 todo 인자=======TodoList(id=null, todo=비타민 영양제, finish=false, key=47acc59504179f7c89542013b86992fe)
+[2023-01-30 09:15:55:561265][http-nio-9001-exec-1] INFO  TodoListServiceImpl - =======save - todoitem=======TodoList(id=139, todo=비타민 영양제, finish=false, key=47acc59504179f7c89542013b86992fe)
+[2023-01-30 09:15:57:562953][http-nio-9001-exec-2] INFO  TodoListServiceImpl - =======putTodo - t=======Optional[TodoList(id=138, todo=조깅하기, finish=true, key=42d7012f763428e2a4504b4e0925b8d2)]
+[2023-01-30 09:16:04:570128][http-nio-9001-exec-3] INFO  TodoListServiceImpl - =======putTodo - t=======Optional[TodoList(id=138, todo=조깅하기, finish=false, key=42d7012f763428e2a4504b4e0925b8d2)]
+[2023-01-30 09:17:50:676096][http-nio-9001-exec-10] INFO  TodoListServiceImpl - =======save - 받아온 todo 인자=======TodoList(id=null, todo=통장정리하기, finish=false, key=4668a55311be152384907557d7834356)
+[2023-01-30 09:17:50:676126][http-nio-9001-exec-10] INFO  TodoListServiceImpl - =======save - todoitem=======TodoList(id=140, todo=통장정리하기, finish=false, key=4668a55311be152384907557d7834356)
+[2023-01-30 09:19:21:766787][http-nio-9001-exec-4] INFO  TodoListServiceImpl - =======save - 받아온 todo 인자=======TodoList(id=null, todo=1, finish=false, key=4589540a2d23f9baa71fe9afc9b5a1f6)
+[2023-01-30 09:19:21:766805][http-nio-9001-exec-4] INFO  TodoListServiceImpl - =======save - todoitem=======TodoList(id=141, todo=1, finish=false, key=4589540a2d23f9baa71fe9afc9b5a1f6)
+[2023-01-30 09:19:41:787370][http-nio-9001-exec-9] INFO  TodoListServiceImpl - =======save - todoitem=======Optional[TodoList(id=141, todo=1, finish=false, key=4589540a2d23f9baa71fe9afc9b5a1f6)]
+[2023-01-30 09:19:54:799536][http-nio-9001-exec-7] INFO  TodoListServiceImpl - =======save - 받아온 todo 인자=======TodoList(id=null, todo=111, finish=false, key=4219f24105513729bd4c16c06c4ba6e4)
+[2023-01-30 09:19:54:799555][http-nio-9001-exec-7] INFO  TodoListServiceImpl - =======save - todoitem=======TodoList(id=142, todo=111, finish=false, key=4219f24105513729bd4c16c06c4ba6e4)
+[2023-01-30 09:20:54:859941][http-nio-9001-exec-8] INFO  TodoListServiceImpl - =======save - todoitem=======Optional[TodoList(id=142, todo=111, finish=false, key=4219f24105513729bd4c16c06c4ba6e4)]
+[2023-01-30 09:21:09:875077][http-nio-9001-exec-1] INFO  TodoListServiceImpl - =======putTodo - t=======Optional[TodoList(id=139, todo=비타민 영양제, finish=true, key=47acc59504179f7c89542013b86992fe)]
+[2023-01-30 09:21:54:920255][http-nio-9001-exec-2] INFO  TodoListServiceImpl - =======putTodo - t=======Optional[TodoList(id=138, todo=유산소 운동, finish=false, key=42d7012f763428e2a4504b4e0925b8d2)]
+[2023-01-30 10:13:03:3988519][RMI TCP Connection(76)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[2023-01-30 10:13:03:3988555][RMI TCP Connection(76)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-9001"]
+[2023-01-30 10:13:03:3988556][RMI TCP Connection(76)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[2023-01-30 10:13:03:3988558][RMI TCP Connection(76)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-01-30 10:13:03:3988565][RMI TCP Connection(76)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-9001"]
+[2023-01-30 10:13:03:3988568][RMI TCP Connection(76)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-9001"]
+[2023-01-30 10:13:03:3988573][RMI TCP Connection(76)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-01-30 10:13:03:3988585][RMI TCP Connection(76)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2023-01-30 10:13:03:3988612][RMI TCP Connection(76)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
